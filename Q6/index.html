@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <div class="main">
+    <form class="form">
+      <p>Enter the information of your pet</p>
+      <label for="name">Name</label>
+      <input type="text" name="name" placeholder="Your Pet's name" class="input" />
+
+      <label>Age</label>
+      <input type="number" name="age" placeholder="Your Pet's Age" class="input" />
+
+      <label for="weight">Weight</label>
+      <input
+        type="number"
+        name="weight"
+        id="weight"
+        placeholder="Your Pet's weight"
+        class="input"
+      />
+
+      <label for="type">Type</label>
+      <input type="text" name="type" placeholder="Your Pet's type" class="input" />
+
+      <label for="like">What it likes most</label>
+      <textarea
+        name="likes"
+        id="like"
+        placeholder="Your Answer"
+      ></textarea>
+
+      <button type="submit" >Submit</button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>

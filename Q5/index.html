@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        text-align: center;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        width: 800px;
+        height: 600px;
+        padding: 10px;
+        margin: 10vh auto;
+      }
+
+      p {
+        margin: 3vh 3vw 5vh 3vw;
+        font-size: 25px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      button {
+        background-image: linear-gradient(
+          to right,
+          #77a1d3 0%,
+          #79cbca 51%,
+          #77a1d3 100%
+        );
+      }
+      button {
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      button:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      #red-btn {
+        background-color: red;
+      }
+
+      #green-btn {
+        background-color: green;
+      }
+
+      #blue-btn {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+        necessitatibus error perferendis accusamus aliquam earum molestiae
+        consequuntur laboriosam rem provident deleniti, maxime odit fuga id
+        minima veritatis, adipisci ut labore. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Recusandae quidem voluptas facere, sequi,
+        voluptatem sint reprehenderit modi, dolore ex minima vitae ab quaerat
+        molestias inventore quas magni amet enim provident.
+      </p>
+      <div class="grid-container">
+        <button type="button" id="red-btn">Red</button>
+        <button type="button" id="green-btn">Green</button>
+        <button type="button" id="blue-btn">Blue</button>
+        <button type="button" id="ten-btn">10</button>
+        <button type="button" id="twenty-btn">20</button>
+        <button type="button" id="thirty-btn">30</button>
+        <button type="button" id="helv-btn">Helvetica</button>
+        <button type="button" id="ubu-btn">Ubuntu</button>
+        <button type="button" id="fut-btn">Futura</button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

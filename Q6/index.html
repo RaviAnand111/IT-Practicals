@@ -5,10 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+
+*{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+ display: flex;
+ flex-direction: column;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ width: 450px;
+ margin: 10vh auto; 
+ height: 700px;
+ border: 6px solid rgb(138, 235, 135); 
+}
+
+.form{
+ display: flex;
+ flex-direction: column;
+ margin: 3rem auto;
+}
+
+.input{
+ width: 17rem;
+ margin: 5px 0 1em 0;
+ height: 38px; 
+ outline: none;
+ border: 1px solid rgb(170, 170, 170);
+ /* font-family: 'Open Sans', sans-serif; */
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 500;
+ font-size: 18px;
+ padding: 0 7px;
+ box-sizing: border-box;
+ border-radius: 3px;
+}
+
+textarea{
+ columns: 20;
+ outline: none;
+ border: 1px solid rgb(170, 170, 170);
+ padding: 15px 7px;
+ box-sizing: border-box;
+ border-radius: 3px;
+ margin: 5px 0 1em 0;
+ font-size: 18px;
+}
+
+label{
+ font-size: 18px;
+ font-weight: 500;
+}
+
+p{
+ font-size: 22px;
+ font-weight: 600;
+}
+
+button{
+ width: 120px;
+ height: 48px;
+ font-size: 20px;
+ margin: 30px auto;
+ background-color: #0B5ED7;
+ color: white;
+ border-radius: 7px;
+ font-weight: 500;
+
+}
+
+    </style>
+
   </head>
   <body>
    <div class="main">
@@ -42,5 +115,22 @@
       <button type="submit" >Submit</button>
     </form>
   </body>
-  <script src="script.js"></script>
+  <script>
+const form = document.querySelector("form");
+const button = document.querySelector("button");
+
+form.addEventListener("submit", () => {
+  const Pet = {
+    name: form.elements["name"].value,
+    age: form.elements["age"].value,
+    weight: form.elements["weight"].value,
+    type: form.elements["type"].value,
+    likes: form.elements["likes"].value,
+  };
+
+  console.log("Javascript Object: ", Pet);
+  console.log("JSON : " + JSON.stringify(Pet));
+});
+
+  </script>
 </html>

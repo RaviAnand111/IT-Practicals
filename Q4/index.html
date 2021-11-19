@@ -8,14 +8,47 @@
 
     <style>
       p {
-        display: flex;
+        /* display: none; */
         justify-content: center;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <p class="cl"></p>
+  </body>
 
-  <p class="cl"></p>
+  <script>
+    const colors = ["red", "blue", "green", "black", "purple", "grey", "aqua"];
+    function table(num) {
+      var fsize = 1;
+      let i = 1;
+      const intervalID = setInterval(() => {
+        if (i === 10) {
+          clearInterval(intervalID);
+        }
+        if (num < 11 && i < 11) {
+          var random = Math.floor(Math.random() * colors.length);
+          var newDiv = document.createElement("p");
+          newDiv.innerHTML = `${num} x ${i} = ${num * i}`;
+          newDiv.style.color = colors[random];
+          // newDiv.innerHTML = newDiv.innerHTML.fontsize(fsize + "px");
+          newDiv.style.fontSize = fsize.toString();
+          document.querySelectorAll(p).style.fontSize = "20px";
+          document.body.appendChild(newDiv);
 
-  <script src="script.js"></script>
+          i++;
+          fsize += 1;
+        }
+      }, 5000);
+    }
+
+    let count = 2;
+    table(count++);
+    var interval = setInterval(() => {
+      if (count === 10) {
+        clearInterval(interval);
+      }
+      table(count++);
+    }, 50000);
+  </script>
 </html>

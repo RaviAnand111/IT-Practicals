@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+     
+         .card{
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          font-family: Arial, Helvetica, sans-serif;
+          width: 500px;
+          padding: 25px;
+          box-sizing: border-box;
+          margin: 0 auto;
+         }
+         
+         #heading{
+          font-size: 30px;
+          text-align: center;
+         }
+         
+         .para{
+          line-height: 22px;
+          letter-spacing: 0.5px;
+         }
+         
+         .btn{
+          display: block;
+          margin: 0 auto;
+          height: 40px;
+          font-size: 17px;
+          border-radius: 6px;
+          background-color: rgb(6, 164, 6);
+          color: white;
+          font-weight: 900;
+         }
+         
+         .btn:hover{
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+         }
+    </style>
+
+  </head>
+  <body>
+    <div>
+      <h3>B.Sc. Hons Computer Science Course</h3>
+      <h4>Fee :</h5>
+      <p>INR. 100000</p>
+      <h4>Eligibility :</h5>
+      <p>12th science stream with maths from a recognized education board</p>
+      <h4>Papers :</h5>
+       <ol>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+       </ol>
+      
+      <h4>Future Possibilities :</h5>
+      <p>
+        A BSc graduate can pursue masters in MSc or MCA for research or to open
+        more opportunites in corporate world, One can also apply for jobs but
+        will have to face lower pay and not main projects irrespective of his
+        skill level just because on the basis of a paper which says he has done
+        bsc not btech or mca which are more wanted by companies just because of
+        a piece of paper.
+      </p>
+
+      <button>Redesign the Page</button>
+    </div>
+  </body>
+
+  <script>
+   $("button").click(function () {
+   $("div:first").addClass("card");
+   $("h3").attr("id", "heading");
+   $("h4:first").attr("id", "fee");
+   $("p").addClass("para");
+   $("li").addClass("para");
+   $("button").addClass("btn");
+});
+
+  </script>
+</html>
